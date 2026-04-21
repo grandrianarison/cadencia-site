@@ -18,14 +18,12 @@ export function ButtonColorful({
 }: ButtonColorfulProps) {
   const inner = (
     <>
-      {/* rotating conic gradient ring */}
+      {/* hover glow ring */}
       <span
         className={cn(
-          "absolute inset-0 rounded-[6px] opacity-80",
-          "bg-[conic-gradient(from_var(--angle),#3b82f6,#6366f1,#8b5cf6,#06b6d4,#3b82f6)]",
-          "[--angle:0deg]"
+          "absolute inset-0 rounded-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+          "bg-[conic-gradient(from_180deg,#3b82f6,#6366f1,#8b5cf6,#06b6d4,#3b82f6)]"
         )}
-        style={{ animation: "spin-slow 3s linear infinite" }}
       />
       {/* inner face */}
       <span className="relative z-10 flex items-center gap-2 rounded-[4px] bg-[#0f0f0f] px-5 py-[10px] text-sm font-semibold text-white transition-colors duration-200 group-hover:bg-[#1a1a1a]">
