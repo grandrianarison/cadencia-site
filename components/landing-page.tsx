@@ -180,19 +180,23 @@ export function LandingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
             {[
               {
-                number: "2 sur 3",
-                label: "recruteurs indépendants dépendent exclusivement du bouche-à-oreille pour trouver leurs clients.",
+                number: "2",
+                suffix: "recruteurs sur 3",
+                label: "dépendent exclusivement du bouche-à-oreille pour trouver leurs clients.",
               },
               {
                 number: "10 000€",
+                suffix: "",
                 label: "en moyenne par placement. Un seul mandat signé rembourse 6 mois d'abonnement.",
               },
               {
                 number: "0 h",
+                suffix: "",
                 label: "de prospection à gérer de votre côté. Ciblage, emails, relances — on s'en charge.",
               },
               {
                 number: "30 jours",
+                suffix: "",
                 label: "pour obtenir vos premiers RDV qualifiés. Sinon remboursement intégral, sans condition.",
               },
             ].map((stat, i) => (
@@ -210,9 +214,16 @@ export function LandingPage() {
                 }}
                 className="bg-zinc-950 px-8 py-10 flex flex-col gap-3"
               >
-                <span className="text-[2.8rem] font-bold leading-none tracking-tight text-white">
-                  {stat.number}
-                </span>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-[2.8rem] font-bold leading-none tracking-tight text-white">
+                    {stat.number}
+                  </span>
+                  {stat.suffix && (
+                    <span className="text-sm font-medium text-white/30 leading-tight">
+                      {stat.suffix}
+                    </span>
+                  )}
+                </div>
                 <p className="text-white/40 text-sm leading-relaxed">{stat.label}</p>
               </motion.div>
             ))}
