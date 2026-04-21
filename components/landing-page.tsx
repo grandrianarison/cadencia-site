@@ -164,6 +164,62 @@ export function LandingPage() {
         </motion.div>
       </AuroraBackground>
 
+      {/* ── STATS ── */}
+      <section className="py-20 bg-white px-6 border-b border-zinc-100">
+        <div className="max-w-6xl mx-auto">
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="text-center text-xs font-medium tracking-[0.2em] uppercase text-zinc-400 mb-14"
+          >
+            La réalité du marché
+          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-100">
+            {[
+              {
+                number: "2 sur 3",
+                label: "recruteurs indépendants dépendent exclusivement du bouche-à-oreille pour trouver leurs clients.",
+              },
+              {
+                number: "10 000€",
+                label: "en moyenne par placement. Un seul mandat signé rembourse 6 mois d'abonnement.",
+              },
+              {
+                number: "0 h",
+                label: "de prospection à gérer de votre côté. Ciblage, emails, relances — on s'en charge.",
+              },
+              {
+                number: "30 jours",
+                label: "pour obtenir vos premiers RDV qualifiés. Sinon remboursement intégral, sans condition.",
+              },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  ...fadeUp,
+                  visible: {
+                    ...fadeUp.visible,
+                    transition: { duration: 0.6, delay: i * 0.08, ease: EASE },
+                  },
+                }}
+                className="bg-white px-8 py-10 flex flex-col gap-3"
+              >
+                <span className="text-[2.8rem] font-bold leading-none tracking-tight text-zinc-900">
+                  {stat.number}
+                </span>
+                <p className="text-zinc-400 text-sm leading-relaxed">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── PAIN ── */}
       <section className="py-28 bg-zinc-50 px-6">
         <div className="max-w-6xl mx-auto">
