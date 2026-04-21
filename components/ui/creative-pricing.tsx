@@ -159,6 +159,9 @@ function CreativePricing({
               >
                 {tier.ctaLabel ?? "Démarrer →"}
               </a>
+              <p className={cn("text-xs text-center mt-3", tier.popular ? "text-white/30" : "text-zinc-400")}>
+                Sans engagement — résiliable à tout moment
+              </p>
             </div>
           </div>
         ))}
