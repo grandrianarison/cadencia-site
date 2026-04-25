@@ -26,13 +26,13 @@ function CreativePricing({
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
       <div className="text-center mb-16 space-y-4">
-        <div className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">
+        <div className="text-sm font-medium uppercase tracking-[0.2em] text-white/30">
           {tag}
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-br from-white to-slate-400 bg-clip-text text-transparent">
           {title}
         </h2>
-        <p className="text-zinc-500 text-lg max-w-md mx-auto">{description}</p>
+        <p className="text-white/35 text-lg max-w-md mx-auto">{description}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
