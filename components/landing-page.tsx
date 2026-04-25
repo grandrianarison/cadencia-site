@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { AnimatedShaderBackground } from "@/components/ui/animated-shader-background";
+import { SparklesCore } from "@/components/ui/sparkles";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { CreativePricing } from "@/components/ui/creative-pricing";
 import type { PricingTier } from "@/components/ui/creative-pricing";
@@ -113,7 +113,17 @@ export function LandingPage() {
       </nav>
 
       {/* ── HERO ── */}
-      <AnimatedShaderBackground className="min-h-screen w-full">
+      <section className="relative min-h-screen w-full bg-zinc-950 flex items-center justify-center overflow-hidden">
+        <SparklesCore
+          id="hero-sparkles"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={80}
+          className="absolute inset-0 w-full h-full"
+          particleColor="#FFFFFF"
+          speed={1}
+        />
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
@@ -159,7 +169,7 @@ export function LandingPage() {
             Garantie résultats — remboursement intégral si aucun RDV qualifié en 30 jours
           </p>
         </motion.div>
-      </AnimatedShaderBackground>
+      </section>
 
       {/* ── STATS ── */}
       <section className="py-20 bg-zinc-950 px-6">
