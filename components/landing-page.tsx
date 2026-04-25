@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { AuroraBackground } from "@/components/ui/aurora-background";
+import { AnimatedShaderBackground } from "@/components/ui/animated-shader-background";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { CreativePricing } from "@/components/ui/creative-pricing";
 import type { PricingTier } from "@/components/ui/creative-pricing";
@@ -113,7 +113,7 @@ export function LandingPage() {
       </nav>
 
       {/* ── HERO ── */}
-      <AuroraBackground className="dark" showRadialGradient>
+      <AnimatedShaderBackground className="min-h-screen w-full">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ export function LandingPage() {
             Garantie résultats — remboursement intégral si aucun RDV qualifié en 30 jours
           </p>
         </motion.div>
-      </AuroraBackground>
+      </AnimatedShaderBackground>
 
       {/* ── STATS ── */}
       <section className="py-20 bg-zinc-950 px-6">
