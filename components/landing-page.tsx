@@ -229,7 +229,7 @@ export function LandingPage() {
       </section>
 
       {/* ── PAIN ── */}
-      <section className="py-28 bg-zinc-50 px-6">
+      <section className="py-28 bg-indigo-950 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden"
@@ -238,12 +238,12 @@ export function LandingPage() {
             variants={fadeUp}
             className="mb-14"
           >
-            <h2 className="text-[clamp(1.8rem,4vw,2.8rem)] font-bold leading-tight mb-3">
-              <span className="font-serif italic text-zinc-400 font-normal">Vous savez recruter.</span>
+            <h2 className="text-[clamp(1.8rem,4vw,2.8rem)] font-bold leading-tight mb-3 text-white">
+              <span className="font-serif italic text-white/30 font-normal">Vous savez recruter.</span>
               <br />
               La prospection clients, c&apos;est une autre histoire.
             </h2>
-            <p className="text-zinc-400 text-lg max-w-xl">
+            <p className="text-white/45 text-lg max-w-xl">
               2 recruteurs indépendants sur 3 citent la prospection comme leur
               principal frein à la croissance.
             </p>
@@ -257,13 +257,13 @@ export function LandingPage() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className="md:col-span-2 bg-white border border-zinc-200 rounded-2xl p-8 group hover:border-zinc-900 hover:-translate-y-1 transition-all duration-300"
+              className="md:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-8 group hover:border-white/25 hover:-translate-y-1 transition-all duration-300"
             >
-              <span className="block font-serif italic text-zinc-200 text-[5rem] leading-none mb-4 select-none">
+              <span className="block font-serif italic text-white/10 text-[5rem] leading-none mb-4 select-none">
                 01
               </span>
-              <h3 className="text-xl font-bold mb-3">Pas le temps</h3>
-              <p className="text-zinc-500 leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-white">Pas le temps</h3>
+              <p className="text-white/50 leading-relaxed">
                 Entre les mandats en cours, les entretiens et le sourcing, la
                 prospection clients passe toujours après. Et les semaines sans
                 nouveau mandat créent de l&apos;anxiété.
@@ -277,13 +277,13 @@ export function LandingPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={{ ...fadeUp, visible: { ...fadeUp.visible, transition: { duration: 0.7, delay: 0.1, ease: EASE } } }}
-                className="bg-white border border-zinc-200 rounded-2xl p-7 group hover:border-zinc-900 hover:-translate-y-1 transition-all duration-300 flex-1"
+                className="bg-white/5 border border-white/10 rounded-2xl p-7 group hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex-1"
               >
-                <span className="block font-serif italic text-zinc-200 text-[4rem] leading-none mb-3 select-none">
+                <span className="block font-serif italic text-white/10 text-[4rem] leading-none mb-3 select-none">
                   02
                 </span>
-                <h3 className="text-lg font-bold mb-2">Trop dépendant du bouche-à-oreille</h3>
-                <p className="text-zinc-500 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold mb-2 text-white">Trop dépendant du bouche-à-oreille</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
                   Le réseau, ça fonctionne — jusqu&apos;au jour où ça
                   s&apos;assèche. Sans pipeline actif, vous n&apos;avez aucun
                   levier pour prévoir votre activité à 3 mois.
@@ -295,7 +295,7 @@ export function LandingPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={{ ...fadeUp, visible: { ...fadeUp.visible, transition: { duration: 0.7, delay: 0.2, ease: EASE } } }}
-                className="bg-zinc-900 text-white border border-zinc-800 rounded-2xl p-7 group hover:-translate-y-1 transition-all duration-300 flex-1"
+                className="bg-teal-900/60 text-white border border-teal-600/30 rounded-2xl p-7 group hover:-translate-y-1 transition-all duration-300 flex-1"
               >
                 <span className="block font-serif italic text-white/10 text-[4rem] leading-none mb-3 select-none">
                   03
@@ -313,7 +313,7 @@ export function LandingPage() {
       </section>
 
       {/* ── COMMENT ÇA MARCHE ── */}
-      <section className="py-28 bg-white px-6" id="comment">
+      <section className="py-28 bg-zinc-50 px-6" id="comment">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden"
