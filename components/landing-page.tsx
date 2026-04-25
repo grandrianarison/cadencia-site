@@ -229,7 +229,7 @@ export function LandingPage() {
       </section>
 
       {/* ── PAIN ── */}
-      <section className="py-28 bg-indigo-950 px-6">
+      <section className="py-28 px-6 bg-gradient-to-b from-zinc-950 via-indigo-950 to-indigo-950">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden"
