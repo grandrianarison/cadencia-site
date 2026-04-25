@@ -280,7 +280,7 @@ export function LandingPage() {
               variants={fadeUp}
               className="md:col-span-2 bg-white/[0.03] border border-white/[0.08] rounded-2xl p-8 group hover:border-white/[0.15] hover:-translate-y-1 transition-all duration-300"
             >
-              <span className="block font-serif italic text-white/[0.06] text-[5rem] leading-none mb-4 select-none">
+              <span className="block font-serif italic text-violet-500/25 text-[5rem] leading-none mb-4 select-none">
                 01
               </span>
               <h3 className="text-xl font-bold mb-3 text-white">Pas le temps</h3>
@@ -299,7 +299,7 @@ export function LandingPage() {
                 variants={{ ...fadeUp, visible: { ...fadeUp.visible, transition: { duration: 0.7, delay: 0.1, ease: EASE } } }}
                 className="bg-white/[0.03] border border-white/[0.08] rounded-2xl p-7 group hover:border-white/[0.15] hover:-translate-y-1 transition-all duration-300 flex-1"
               >
-                <span className="block font-serif italic text-white/[0.06] text-[4rem] leading-none mb-3 select-none">
+                <span className="block font-serif italic text-violet-500/25 text-[4rem] leading-none mb-3 select-none">
                   02
                 </span>
                 <h3 className="text-lg font-bold mb-2 text-white">Trop dépendant du bouche-à-oreille</h3>
@@ -318,7 +318,7 @@ export function LandingPage() {
                 className="bg-white/[0.05] border border-white/[0.12] rounded-2xl p-7 group hover:border-white/20 hover:-translate-y-1 transition-all duration-300 flex-1"
                 style={{ boxShadow: "inset 0 0 40px rgba(99,102,241,0.06)" }}
               >
-                <span className="block font-serif italic text-white/[0.06] text-[4rem] leading-none mb-3 select-none">
+                <span className="block font-serif italic text-violet-500/25 text-[4rem] leading-none mb-3 select-none">
                   03
                 </span>
                 <h3 className="text-lg font-bold mb-2 text-white">Vous savez pas par où commencer</h3>
@@ -388,7 +388,7 @@ export function LandingPage() {
                   i < 2 && "border-b border-white/[0.06]"
                 )}
               >
-                <div className="font-serif italic text-[3.5rem] text-white/[0.08] leading-none select-none pt-1">
+                <div className="font-serif italic text-[3.5rem] text-violet-500/40 leading-none select-none pt-1">
                   {step.n}
                 </div>
                 <div>
