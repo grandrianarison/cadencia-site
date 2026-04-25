@@ -5,8 +5,6 @@ import React from "react";
 interface PricingTier {
   name: string;
   icon: React.ReactNode;
-  price: number;
-  currency?: string;
   description: string;
   features: string[];
   popular?: boolean;
@@ -96,25 +94,6 @@ function CreativePricing({
                 </p>
               </div>
 
-              <div className="mb-6">
-                <span
-                  className={cn(
-                    "text-4xl font-bold tracking-tight",
-                    tier.popular ? "text-white" : "text-zinc-900"
-                  )}
-                >
-                  {tier.currency ?? "€"}{tier.price.toLocaleString("fr-FR")}
-                </span>
-                <span
-                  className={cn(
-                    "text-sm ml-1",
-                    tier.popular ? "text-zinc-400" : "text-zinc-400"
-                  )}
-                >
-                  / mois
-                </span>
-              </div>
-
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
@@ -157,7 +136,7 @@ function CreativePricing({
                     : "bg-white text-zinc-900 border-zinc-900 shadow-zinc-900 hover:bg-zinc-50"
                 )}
               >
-                {tier.ctaLabel ?? "Démarrer →"}
+                {tier.ctaLabel ?? "Réserver un appel découverte"}
               </a>
               <p className={cn("text-xs text-center mt-3", tier.popular ? "text-white/30" : "text-zinc-400")}>
                 Sans engagement — résiliable à tout moment

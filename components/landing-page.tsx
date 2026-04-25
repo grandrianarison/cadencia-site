@@ -15,7 +15,6 @@ const pricingTiers: PricingTier[] = [
   {
     name: "Starter",
     icon: <Zap className="w-5 h-5" />,
-    price: 1490,
     description: "Pour tester et obtenir vos premières opportunités outbound.",
     features: [
       "1 campagne cold email active",
@@ -29,7 +28,6 @@ const pricingTiers: PricingTier[] = [
   {
     name: "Pro",
     icon: <BarChart2 className="w-5 h-5" />,
-    price: 2490,
     description: "Pour construire un pipeline régulier et prévisible.",
     popular: true,
     features: [
@@ -45,7 +43,6 @@ const pricingTiers: PricingTier[] = [
   {
     name: "Scale",
     icon: <TrendingUp className="w-5 h-5" />,
-    price: 3990,
     description: "Pour les cabinets qui veulent industrialiser leur développement commercial.",
     features: [
       "3 campagnes simultanées",
